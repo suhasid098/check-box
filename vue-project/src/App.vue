@@ -8,24 +8,28 @@ export default {
 }
 </script>
 <template>
-  <center>
-    <input
-      v-model="tutorials"
-      type="checkbox"
-      value="Data Structures"
-      name="ds"/>
-    <label for="ds">Data Structures</label><br />
-    <input v-model="tutorials" 
-           type="checkbox" 
-           value="Algorithms" 
-           name="al" />
-    <label for="al">Algorithms</label><br />
-    <input
-      v-model="tutorials"
-      type="checkbox"
-      value="Machine Learning"
-      name="ml"/>
-    <label for="ml">Machine Learning</label>
-    <p>Tutorials: {{ tutorials }}</p>
-  </center>
+  <input
+    v-model="tutorials"
+    type="checkbox"
+    value="Video"
+    name="video"/>
+  <label for="video">Video</label><br />
+  <input v-model="tutorials" 
+          type="checkbox" 
+          value="Text" 
+          name="text" />
+  <label for="text">Text</label><br />
+  <input
+    v-model="tutorials"
+    type="checkbox"
+    value="Examples"
+    name="examples"/>
+  <label for="examples">Examples</label><br />
+  <input
+    v-model="tutorials"
+    type="checkbox"
+    value="QnA"
+    name="qna"/>
+  <label for="qna">QnA</label>
+  <p>Tutorials: {{ tutorials }}</p>
 </template>
